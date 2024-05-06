@@ -1,8 +1,9 @@
 plugins {
     java
     application
+    scala
 }
 
 application {
-    mainClass = "ClassB"
+    mainClass = "Puppet"
 }
