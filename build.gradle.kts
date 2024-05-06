@@ -1,3 +1,9 @@
-plugins{
+plugins {
     java
+    application
+    scala
+}
+
+application {
+    mainClass = "Puppet"
 }

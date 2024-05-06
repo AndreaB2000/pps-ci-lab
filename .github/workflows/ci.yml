@@ -1,7 +1,9 @@
-name: CI
+name: ci
 
 on:
   push:
+    branches:
+      - develop
 
 jobs:
   build:
@@ -14,8 +16,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v2
       with:
-        java-version: '21' # You can change this to the appropriate Java version
-        distribution: "temurin"
+        java-version: '21'
+        distribution: 'temurin'
 
-    - name: Run Gradle build
-      run: ./gradlew build --console=plain
+    - name: Gradle build
+      run: ./gradlew build
